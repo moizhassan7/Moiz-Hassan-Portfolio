@@ -26,7 +26,7 @@ function Home() {
               <span className="highlight">
               
                 <Shuffle
-                  text="ZEESHAN"
+                  text="MOIZ HASSAN"
                   shuffleDirection="right"
                   duration={0.35}
                   animationMode="evenodd"
@@ -39,7 +39,7 @@ function Home() {
                   respectReducedMotion={true}
                 />
               </span>{" "}
-              <br /> Web Developer
+              <br />Web Specialist
             </h1>
             <div className="heroTag">FULL STACK DEVELOPER</div>
             <p className="heroDesc">

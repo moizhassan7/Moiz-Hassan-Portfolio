@@ -10,22 +10,27 @@ function Experience() {
     {
       name: "HTML",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-      percent: 95,
+      percent: 100,
     },
     {
       name: "CSS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-      percent: 90,
+      percent: 100,
     },
     {
       name: "JavaScript",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-      percent: 88,
+      percent: 90,
     },
     {
       name: "React JS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       percent: 85,
+    },
+    {
+      name: "Next.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      percent: 75,
     },
     {
       name: "Tailwind CSS",
@@ -35,7 +40,7 @@ function Experience() {
     {
       name: "Node JS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      percent: 82,
+      percent: 80,
     },
     {
       name: "Express JS",
@@ -43,19 +48,75 @@ function Experience() {
       percent: 80,
     },
     {
+      name: "PHP",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+      percent: 80,
+    },
+    {
+      name: "Laravel",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
+      percent: 70,
+    },
+    {
       name: "MongoDB",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-      percent: 78,
+      percent: 60,
     },
+    {
+      name: "MySQL",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      percent: 70,
+    },
+    {
+      name: "PostgreSQL",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      percent: 65,
+    },
+    {
+      name: "Prisma",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
+      percent: 60,
+    },
+    {
+      name: "WordPress",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+      percent: 75,
+    },
+    {
+      name: "Woo Commerce",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg",
+      percent: 70,
+    },
+    {
+      name: "Docker",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      percent: 50,
+    },
+ 
     {
       name: "Git",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      percent: 85,
+      percent: 90,
     },
     {
       name: "GitHub",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       percent: 80,
+    },
+    {
+      name: "Postman",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+      percent: 90,
+    },
+    {
+      name: "Figma",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      percent: 85,
+    },
+    {
+      name: "Sketch",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg",
+      percent: 60,
     },
   ];
   const fadeUp = {

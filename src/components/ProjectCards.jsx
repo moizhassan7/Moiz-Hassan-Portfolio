@@ -5,7 +5,7 @@ import "../styles/ProjectCards.css";
 export default function ProjectCards() {
   const projects = [
     {
-      title: "SMC Portal",
+      title: "SMC",
       description: "A responsive college portal built using React & Node.js.",
       image: "/imags/smc.png",
       link: "https://smcsgd.edu.pk/",
@@ -14,13 +14,13 @@ export default function ProjectCards() {
       title: "GitHub Repo Explorer",
       description: "A React app that fetches and visualizes GitHub repositories.",
       image: "/imags/github.png",
-      link: "https://github.com/yourusername/repo",
+      link: "https://github.com/moizhassan7",
     },
     {
-      title: "Harvard School Website",
+      title: "Goods Management System",
       description: "An elegant educational site using WordPress and custom themes.",
       image: "/imags/harvard.png",
-      link: "https://harvardschool.edu.pk/",
+      link: "https://zikriagoods.com",
     },
   ];
 

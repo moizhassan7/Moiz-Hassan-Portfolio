@@ -154,7 +154,7 @@ const ThankYou = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
             >
-              <span className="finalsign">Zeeshan .</span>
+              <span className="finalsign">moizhassan .</span>
             </motion.h2>
             <motion.p 
               className="tagline"
@@ -252,7 +252,7 @@ const ThankYou = () => {
 
         <ScrollRevealChild delay={0.6}>
           <p className="copyright">
-            © 2025 Zeeshan. All rights reserved.
+            © {new Date().getFullYear()} Moiz Hassan. All rights reserved.
           </p>
         </ScrollRevealChild>
       </div>

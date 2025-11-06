@@ -20,10 +20,10 @@ function Navbar() {
       <div className="navLogo">
         <a href="#home">
           <DecryptedText
-            text="Z."
+            text="M."
             speed={200}
             maxIterations={40}
-            characters="KIRANsjad#@#^6125"
+            characters="M."
             className="revealed"
             parentClassName="all-letters"
             encryptedClassName="encrypted"

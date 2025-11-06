@@ -7,7 +7,7 @@ import Experiance from "./components/Experiance";
 import Projects from "./components/Projects";
 import ThankYou from "./components/Contact";
 import Navbar from "./components/Navbar";
-import Docker from "./components/Docker"; // 👈 add this
+import Docker from "./components/Docker"; 
 import "./styles/app.css";
 import "./styles/animations.css";
 import "./styles/scroll-progress.css";
@@ -65,11 +65,7 @@ function App() {
         }}
       />
 
-      {showWellcome ? (
-        <div className={`splashWrapper ${fade ? "fadeOut" : ""}`}>
-          <Wellcome />
-        </div>
-      ) : (
+     
         <div className="mainContent">
           {/* 👇 Conditionally render Navbar or Docker */}
           {isMobile ? <Docker /> : <Navbar />}
@@ -90,7 +86,7 @@ function App() {
             <ThankYou />
           </section>
         </div>
-      )}
+
     </>
   );
 }

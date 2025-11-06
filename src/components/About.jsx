@@ -6,7 +6,6 @@ import "../styles/About.css";
 import "../styles/animations.css";
 import PixelTransition from "./PixelTransition";
 import TextType from "./TextType";
-
 function About() {
   const containerRef = useRef(null);
 
@@ -30,7 +29,7 @@ function About() {
             <PixelTransition
               firstContent={
                 <img
-                  src="https://scontent.flyp2-1.fna.fbcdn.net/v/t39.30808-6/503602046_122212331852162023_1195050744545413_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7wO-jFxkfcsQ7kNvwGkd3br&_nc_oc=Adk4okP-0v1acuhgBsh9Y44aJyl1PGQKcFyrynaTDmyfrqZfushB3I3gHSEZs6j2ymrm9HVsex1KtTT2YOYV9Q-X&_nc_zt=23&_nc_ht=scontent.flyp2-1.fna&_nc_gid=r3ACRzjFpIgEAh7Q3EeFIQ&oh=00_Afhqbr3cbHZTma2W6eCeWsEO656lrJf8aSuc5PzY4UvwDw&oe=690D2B98"
+                  src="/imags/abc.png"
                   alt="default pixel transition"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
@@ -137,7 +136,7 @@ function About() {
               <i className="ri-lightbulb-line"></i>
               <div className="card__content">
                 <p className="card__title">Experience</p>
-                <p className="card__description">2 Months Working</p>
+                <p className="card__description">4 Years Working</p>
               </div>
             </div>
 
@@ -145,15 +144,15 @@ function About() {
               <i className="ri-briefcase-line"></i>
               <div className="card__content">
                 <p className="card__title">Completed</p>
-                <p className="card__description">20+ Projects</p>
+                <p className="card__description">100+ Projects</p>
               </div>
             </div>
 
             <div className="card">
               <i className="ri-headphone-line"></i>
               <div className="card__content">
-                <p className="card__title">Support</p>
-                <p className="card__description">Online 24/7</p>
+                <p className="card__title">Satisfied Clients</p>
+                <p className="card__description">50+</p>
               </div>
             </div>
           </div>
