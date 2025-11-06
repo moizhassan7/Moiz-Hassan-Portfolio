@@ -1,0 +1,36 @@
+.scroll-progress {
+  background: linear-gradient(
+    90deg, 
+    var(--color-brand-primary) 0%,
+    var(--color-brand-accent) 100%
+  ) !important;
+  opacity: 0.8;
+  box-shadow: 0 2px 8px rgba(var(--rgb-brand-primary), 0.2);
+  display: none;
+}
+
+/* Add a subtle glow effect */
+.scroll-progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}

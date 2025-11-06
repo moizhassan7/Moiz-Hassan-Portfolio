@@ -1,0 +1,207 @@
+/* ===============================
+   EXPERIENCE SECTION — DARK GOLD THEME
+   =============================== */
+
+.experienceMain {
+  background-color: var(--color-brand-accent);
+  color: var(--color-text-primary);
+  font-family: "Poppins", sans-serif;
+  padding: 8rem 10%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* ===============================
+   HEADER
+   =============================== */
+.experienceHeader {
+  text-align: center;
+}
+
+.sectionSubtitle {
+  color: var(--theme-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ===============================
+   CONTAINER
+   =============================== */
+.experienceContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* ===============================
+   CARD
+   =============================== */
+.expCard {
+  background: #0a0a0a;
+  border: 1px solid rgba(var(--rgb-brand-primary), 0.16);
+  border-radius: 20px;
+  padding: 2.5rem;
+  flex: 1 1 450px;
+  transition: transform 0.3s ease;
+}
+
+.expCard:hover {
+  transform: translateY(-3px);
+}
+
+.expCard h3 {
+  font-size: 1.4rem;
+  color: var(--color-brand-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ===============================
+   SKILL ITEMS
+   =============================== */
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.skillItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skillHeader h4 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.skillHeader span {
+  font-size: 0.9rem;
+  color: var(--color-brand-primary);
+}
+
+/* ===============================
+   PROGRESS BAR
+   =============================== */
+.progressBar {
+  height: 8px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 0.3rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--color-brand-primary);
+  transition: width 0.6s ease;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 900px) {
+  .experienceContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expCard {
+    width: 100%;
+  }
+}
+.experienceMain {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+  background-color:var(--color-brand-accent);
+}
+
+.sectionSubtitle {
+  font-size: 1rem;
+  color: #ffc107;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.skillsGrid {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.skillBox {
+  background: #111;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  width: 150px;
+}
+
+.skillBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem auto;
+}
+
+.iconWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skillBox h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background: #222;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #337418,#5DD62C);
+  border-radius: 4px;
+}

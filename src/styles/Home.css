@@ -1,0 +1,116 @@
+.heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--color-brand-accent);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 2rem;
+}
+
+.heroContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 2rem;
+  z-index: 10;
+}
+
+.heroText {
+  flex: 1;
+  max-width: 550px;
+}
+
+.heroHello {
+  color: #7cff3a;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.heroTitle {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.highlight {
+  position: relative;
+  top: 20px;
+  color: #7cff3a;
+}
+
+.heroTag {
+  display: inline-block;
+  border: 2px solid #7cff3a;
+  padding: 0.4rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #7cff3a;
+  margin-bottom: 1rem;
+}
+
+.heroDesc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #aaa;
+  max-width: 500px;
+}
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage img {
+  width: min(1000px, 100%);
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+
+
+.heroDecor .chevron {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-left: 3px solid #7cff3a;
+  border-bottom: 3px solid #7cff3a;
+  transform: rotate(45deg);
+  opacity: 0.2;
+}
+
+.chevron1 {
+  bottom: 50px;
+  left: 60px;
+}
+
+.chevron2 {
+  top: 80px;
+  right: 60px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroImage img {
+    width: 70%;
+  }
+
+  .heroTag {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,327 @@
+.aboutMain {
+  background-color: var(--color-brand-accent);
+  color: var(--color-text-primary);
+  font-family: "Poppins", sans-serif;
+  padding: 8rem 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===============================
+   MAIN LAYOUT
+   =============================== */
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ===============================
+   IMAGE SECTION
+   =============================== */
+.aboutImage {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutImage img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  /* border: 2px solid var(--color-brand-primary); */
+}
+
+/* ===============================
+   INFO SECTION
+   =============================== */
+.aboutInfo {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.introText {
+  font-size: 0.9rem;
+  color: var(--color-brand-primary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.aboutContent .variable-proximity-demo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-transform: capitalize;
+}
+
+/* ===============================
+   STATS CARDS
+   =============================== */
+.aboutStats {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.statCard {
+  background: var(--theme-highlighter);
+  border: 1px solid var(--color-card-border);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  flex: 1 1 120px;
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  border-color: var(--color-brand-primary);
+  transform: translateY(-4px);
+}
+
+.statCard h4 {
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.statCard p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* ===============================
+   DESCRIPTION
+   =============================== */
+.aboutDescription {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* ===============================
+   CONTACT BUTTON
+   =============================== */
+.contactBtn {
+  margin-top: 0.5rem;
+  background-color: var(--color-brand-primary);
+  color: var(--color-bg-primary);
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.contactBtn:hover {
+  background-color: var(--color-bg-primary);
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 900px) {
+  .aboutContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutInfo {
+    align-items: center;
+  }
+
+  .contactBtn {
+    align-self: center;
+  }
+
+  .aboutStats {
+    justify-content: center;
+  }
+}
+/* From Uiverse.io by Galahhad + Framer Motion hover scaling */
+.ui-btn {
+  --btn-default-bg: rgb(41, 41, 41);
+  --btn-padding: 15px 20px;
+  --btn-hover-bg: rgb(51, 51, 51);
+  --btn-transition: 0.3s;
+  --btn-letter-spacing: 0.1rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0.137);
+  --btn-shadow: 0 2px 10px 0 var(--btn-shadow-color);
+  --hover-btn-color: #5DD62C; /* Updated to match your green theme */
+  --default-btn-color: #fff;
+  --font-size: 16px;
+  --font-weight: 600;
+  --font-family: Menlo, Roboto Mono, monospace;
+
+  box-sizing: border-box;
+  padding: var(--btn-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-btn-color);
+  font: var(--font-weight) var(--font-size) var(--font-family);
+  background: var(--btn-default-bg);
+  border: none;
+  cursor: pointer;
+  transition: var(--btn-transition);
+  overflow: hidden;
+  box-shadow: var(--btn-shadow);
+  border-radius: 8px;
+}
+
+.ui-btn span {
+  letter-spacing: var(--btn-letter-spacing);
+  transition: var(--btn-transition);
+  box-sizing: border-box;
+  position: relative;
+  background: inherit;
+}
+
+.ui-btn span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+}
+
+.ui-btn:hover,
+.ui-btn:focus {
+  background: var(--btn-hover-bg);
+}
+
+.ui-btn:hover span,
+.ui-btn:focus span {
+  color: var(--hover-btn-color);
+}
+
+.ui-btn:hover span::before,
+.ui-btn:focus span::before {
+  animation: chitchat linear both var(--btn-animation-duration);
+}
+
+/* Glitch animation */
+@keyframes chitchat {
+  0% { content: "#"; }
+  5% { content: "."; }
+  10% { content: "^{"; }
+  15% { content: "-!"; }
+  20% { content: "#$_"; }
+  25% { content: "№:0"; }
+  30% { content: "#{+."; }
+  35% { content: "@}-?"; }
+  40% { content: "?{4@%"; }
+  45% { content: "=.,^!"; }
+  50% { content: "?2@%"; }
+  55% { content: "\\;1}]"; }
+  60% { content: "?{%:%"; right: 0; }
+  65% { content: "|{f[4"; right: 0; }
+  70% { content: "{4%0%"; right: 0; }
+  75% { content: "'1_0<"; right: 0; }
+  80% { content: "{0%"; right: 0; }
+  85% { content: "]>'"; right: 0; }
+  90% { content: "4"; right: 0; }
+  95% { content: "2"; right: 0; }
+  100% { content: ""; right: 0; }
+}
+
+/* Optional: subtle glow to match your theme */
+.ui-btn:hover {
+  /* box-shadow: 0 0 12px rgba(93, 214, 44, 0.5); */
+}
+.aboutCards {
+  display: flex !important;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* ==== Uiverse 3D Card (Green Theme) ==== */
+.aboutCards .card {
+  position: relative;
+  width: 180px !important;
+  height: 180px !important;
+  background-color: var(--color-bg-card, #161616);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  border: 1px solid var(--color-brand-primary);
+  box-shadow: 0 0 10px rgba(93, 214, 44, 0.2);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.aboutCards .card i {
+  font-size: 2.5rem;
+  color: var(--color-brand-primary);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.aboutCards .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(93, 214, 44, 0.35);
+}
+
+.aboutCards .card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--color-bg-secondary, #202020);
+  border-top: 2px solid var(--color-brand-primary);
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.aboutCards .card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.aboutCards .card__title {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--color-brand-primary);
+  font-weight: 700;
+}
+
+.aboutCards.card:hover i {
+  scale: 0;
+}
+
+.aboutCards .card__description {
+  margin: 10px 0 0;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary, #ccc);
+  line-height: 1.4;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .aboutCards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 250px;
+    height: 180px;
+  }
+}

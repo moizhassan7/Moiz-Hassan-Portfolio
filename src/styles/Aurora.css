@@ -1,0 +1,6 @@
+.aurora-container {
+  width: 100%;
+  position: absolute;
+  height: 50%;
+  z-index: 10;
+}

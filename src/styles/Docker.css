@@ -1,0 +1,47 @@
+.bottomDock {
+  position: fixed;
+  /* bottom: 10px; */
+  bottom: 20px;
+  left: 15px;
+  width: 90%;
+  height: 64px;
+  background: rgba(194, 184, 184, 0.103);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1200;
+  padding-bottom: calc(env(safe-area-inset-bottom, 0) + 8px);
+}
+
+.bottomDock .dockItem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-brand-accent);
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.3s ease;
+  /* Make sure buttons look like links/icons and don't get default button styles */
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.bottomDock .dockItem svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.bottomDock .dockItem:hover,
+.bottomDock .dockItem:focus {
+  color: var(--color-brand-primary);
+  transform: translateY(-4px);
+}

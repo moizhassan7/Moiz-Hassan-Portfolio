@@ -1,0 +1,190 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === GLASS CARD BASE === */
+.container .glass {
+  position: relative;
+  width: 280px;
+  height: 300px;
+  background: linear-gradient(rgba(var(--theme-soft-rgb), 0.06), transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.glass img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+.container:hover .rd,
+.container:hover .nd,
+.container:hover .st {
+  transform: rotate(0deg) !important;
+  margin: 0 10px;
+}
+
+/* === IMAGE HOVER EFFECT === */
+.glass:hover img {
+  filter: brightness(0.4);
+  transform: scale(1.05);
+}
+
+/* === OVERLAY === */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.85);
+  color: #f5e8b7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.glass:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === TEXT === */
+.overlay h3 {
+  color: var(--color-brand-primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.overlay p {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* === BUTTON === */
+.view-btn {
+  background: var(--color-brand-accent);
+  color: var(--color-text-light);
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background: var(--theme-primary);
+  transform: scale(1.05);
+}
+.infiniteMenuOuter {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.infiniteMenuInner {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  align-items: center;
+  will-change: transform;
+}
+
+.infiniteItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  min-width: 260px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  color: #fff;
+}
+
+.infiniteItem:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.itemImage img {
+  width: 100%;
+  height: 160px;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+
+.itemContent {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.itemContent h3 {
+  font-size: 1.2rem;
+  color: var(--color-brand-primary, #1b7785);
+  margin-bottom: 0.5rem;
+}
+
+.itemContent p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary, #d0d0d0);
+  margin-bottom: 0.8rem;
+}
+
+.viewBtn {
+  background: var(--color-brand-primary, #1b7785);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.viewBtn:hover {
+  background: var(--color-brand-secondary, #18a999);
+  transform: scale(1.05);
+}
+
+/* === RESPONSIVENESS === */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .container .glass {
+    margin: 0;
+    width: 90%;
+    height: 260px;
+  }
+}
+.projectTitle{
+  color:var(--color-brand-primary);
+}

@@ -1,0 +1,116 @@
+.wellComeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4vw 6%;
+  background: #000;
+  color: #fff;
+  font-family: "Inter", "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.textArea {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.wellComeContainer .variable-proximity-demo {
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.1;
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-variation-settings: 'wght' 600;
+}
+
+.wellcomePara {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #a3a1a1;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  text-align: justify;
+  max-width: 90%;
+}
+
+.imageArea {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imageArea img {
+  width: min(280px, 40vw);
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.modernBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background-color: var(--theme-accent, #f5b700);
+  color: #000;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 1.6vw, 1rem);
+  padding: 0.6rem 1.4rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background 0.3s;
+  margin-top: 2rem;
+}
+
+.btnIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: var(--theme-accent, #f5b700);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.modernBtn:hover {
+  background-color: #ffd166;
+}
+
+@media (max-width: 900px) {
+  .wellComeContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  .imageArea {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .wellcomePara {
+    max-width: 100%;
+  }
+
+  .modernBtn {
+    margin: 1.5rem auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .wellComeContainer .variable-proximity-demo {
+    font-size: 2rem;
+  }
+
+  .imageArea img {
+    width: 80%;
+  }
+
+  .wellcomePara {
+    font-size: 0.95rem;
+  }
+}

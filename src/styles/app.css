@@ -1,0 +1,102 @@
+/* ======================================================
+   ⚡ GLOBAL THEME — Neo Green Portfolio
+   (Single Dark Theme Version)
+====================================================== */
+
+/* ========== Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== COLOR SYSTEM ========== */
+:root {
+  /* ----- Brand Colors ----- */
+  --color-brand-primary: #5DD62C;      /* Bright neon green */
+  --color-brand-secondary: #337418;    /* Deep accent green */
+  --color-brand-accent: #000000;       /* True black background */
+
+  /* ----- Backgrounds ----- */
+  --color-bg-primary: #0F0F0F;         /* Page background */
+  --color-bg-secondary: #202020;       /* Section background */
+  --color-bg-card: #161616;            /* Card/surface background */
+  --color-bg-contrast: #337418;        /* Optional accent panels */
+
+  /* ----- Text Colors ----- */
+  --color-text-primary: #F8F8F8;       /* Main readable text */
+  --color-text-secondary: #C8C8C8;     /* Muted text */
+  --color-text-light: #FFFFFF;         /* On dark areas */
+  --color-text-muted: #7D7D7D;         /* Subtle labels */
+  --color-text-accent: #f5e8b7;        /* Warm accent (used in Thank you and highlights) */
+
+  /* RGB helpers (useful for rgba() with opacity) */
+  --rgb-brand-primary: 93, 214, 44;    /* rgb for #5DD62C */
+  --rgb-text-secondary: 200, 200, 200;   /* rgb for #C8C8C8 */
+  --color-shiny-text: rgba(171,171,169,0.6); /* shiny text base */
+
+  /* ----- Interactive ----- */
+  --color-link: #5DD62C;
+  --color-link-hover: #75FF45;
+  --color-button-primary: #5DD62C;
+  --color-button-hover: #75FF45;
+  --color-button-secondary: #337418;
+
+  /* ----- Navigation ----- */
+  --color-nav-bg: rgba(15, 15, 15, 0.95);
+  --color-nav-text: #F8F8F8;
+  --color-nav-active: #5DD62C;
+
+  /* ----- Components ----- */
+  --color-card-border: rgba(255, 255, 255, 0.08);
+  --color-input-bg: #202020;
+  --color-input-border: #333;
+  --color-input-focus: #5DD62C;
+
+  /* ----- Feedback ----- */
+  --color-success: #5DD62C;
+  --color-error: #E74C3C;
+  --color-warning: #F1C40F;
+  --color-info: #3498DB;
+
+  /* ----- Effects ----- */
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-shadow: rgba(0, 0, 0, 0.5);
+
+  /* ----- Typography & Layout ----- */
+  --font-primary: "Poppins", sans-serif;
+  --font-signature: "Great Vibes", cursive;
+  --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-strong: 0 8px 30px rgba(0, 0, 0, 0.5);
+
+  /* ----- Gradients ----- */
+  --gradient-brand: linear-gradient(135deg, #5DD62C, #337418);
+  --gradient-accent: linear-gradient(135deg, #0F0F0F, #202020);
+
+  /* ----- Breakpoints ----- */
+  --bp-xs: 360px;
+  --bp-sm: 600px;
+  --bp-md: 900px;
+  --bp-lg: 1200px;
+
+  /* ----- Font Size (Fluid) ----- */
+  font-size: clamp(14px, 1.2vw + 12px, 18px);
+}
+
+/* ======================================================
+   🌐 BASE STYLES
+====================================================== */
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+
+/* Utility classes */

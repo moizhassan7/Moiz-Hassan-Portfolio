@@ -1,0 +1,303 @@
+/* ====== THANK YOU PAGE WRAPPER ====== */
+.thankyou-page {
+  background-color: var(--color-brand-accent) !important;
+  color: var(--color-text-accent);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ====== HERO SECTION ====== */
+.thankyou-hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8rem 10%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+  /* width: 600px; */
+}
+
+/* background overlay image */
+.thankyou-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../../public/imags/myimg.png") no-repeat right center/contain;
+  opacity: 1;
+  filter: brightness(1.1) contrast(1.2);
+  z-index: 0;
+}
+
+/* ====== TEXT CONTENT ====== */
+.thankyou-text {
+  max-width: 550px;
+  position: relative;
+  z-index: 2;
+}
+
+.thank-title {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--color-text-primary);
+  line-height: 1;
+  margin-left: 0.4rem;
+}
+
+.thankyou-hero .variable-proximity-demo {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--color-brand-secondary);
+  line-height: 1;
+}
+
+.thank-sub {
+  color: var(--color-text-primary);
+  font-style: italic;
+  font-size: 1.8rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.thankyou-text p {
+  color: var(--color-text-secondary);
+  max-width: 420px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ====== ICONS BELOW TEXT ====== */
+.thank-icons {
+  margin-top: 1.8rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.thank-icons i {
+  background: var(--color-brand-primary);
+  color: var(--color-bg-primary);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.thank-icons i:hover {
+  transform: scale(1.1);
+  background: rgba(var(--rgb-brand-primary), 0.9);
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background-color: var(--color-brand-accent) !important;
+  color: var(--color-brand-primary);
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-top: 1px solid #1a1a1a;
+}
+
+.footer h3 {
+  color: var(--color-text-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.footer-nav li {
+  color: var(--color-text-muted);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-nav li:hover {
+  color: var(--color-brand-primary);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.social-links i {
+  transition: color 0.2s ease;
+  color: var(--color-text-muted);
+}
+
+.social-links i:hover {
+  color: var(--color-brand-primary);
+}
+
+.footer p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+/* ====== SOCIAL ICONS ====== */
+.thank-icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.thank-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-brand-primary);
+  color: var(--color-bg-primary);
+  font-size: 1.3rem;
+  transition: all 0.25s ease;
+}
+
+.thank-icons a:hover {
+  transform: scale(1.1);
+  background: rgba(var(--rgb-brand-primary), 0.9);
+  color: var(--color-text-primary);
+}
+.footer {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.footer-container {
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-brand h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.footer-brand .tagline {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.footer-nav a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--color-text-primary);
+}
+
+.footer-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+.footer-message input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.footer-message button {
+  background: var(--color-text-primary);
+  color: var(--color-bg-primary);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.footer-message button:hover {
+  background: var(--color-brand-primary);
+  color: var(--color-text-primary);
+}
+
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--color-text-secondary);
+  font-size: 1.3rem;
+  transition: all 0.25s ease;
+}
+
+.social-links a:hover {
+  color: var(--color-brand-primary);
+  transform: scale(1.15);
+}
+
+.copyright {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+  .thankyou-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 8%;
+  }
+
+  .thankyou-hero::before {
+    background-position: center;
+    opacity: 0.15;
+  }
+
+  .thank-title,
+  .variable-proximity-demo {
+    font-size: 3.5rem;
+  }
+
+  .thank-sub {
+    font-size: 1.4rem;
+  }
+
+  .thankyou-text p {
+    font-size: 0.95rem;
+  }
+}
+.finalsign{
+  font-family: "Cedarville Cursive";
+}

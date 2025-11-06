@@ -1,0 +1,114 @@
+/* ScrollReveal animations */
+.thankyou-text > * {
+  will-change: transform, opacity;
+}
+
+.thank-title {
+  perspective: 1000px;
+}
+
+.thank-title span {
+  display: inline-block;
+  backface-visibility: hidden;
+}
+
+.thank-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.thank-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(var(--rgb-brand-primary), 0.1);
+  color: var(--color-brand-primary);
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+.thank-icons a:hover {
+  background: rgba(var(--rgb-brand-primary), 0.15);
+}
+
+.footer {
+  perspective: 1000px;
+}
+
+.footer-container > * {
+  will-change: transform, opacity;
+}
+
+.footer-nav li {
+  transform-origin: left center;
+}
+
+.footer-nav a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--color-brand-primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.footer-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.social-links a {
+  transform-origin: center bottom;
+}
+
+.footer-message input {
+  transform-origin: top left;
+  transition: border-color 0.3s ease;
+}
+
+.footer-message button {
+  transform-origin: right center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.footer-message button:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .thankyou-hero {
+    padding: 6rem 5%;
+  }
+  
+  .thank-title {
+    font-size: 4rem;
+  }
+  
+  .thank-icons {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .thank-title {
+    font-size: 3rem;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}

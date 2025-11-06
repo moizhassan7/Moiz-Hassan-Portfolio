@@ -1,0 +1,345 @@
+/* ===============================
+   PROJECTS SECTION — DARK GOLD THEME
+   =============================== */
+
+.projectsmain {
+  background-color: var(--color-brand-accent);
+  color: var(--color-text-primary);
+  font-family: "Poppins", sans-serif;
+  padding: clamp(3rem, 6vw, 8rem) 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+  overflow: hidden;
+}
+
+/* ===============================
+   WORK SECTION (Top Folder + Title)
+   =============================== */
+
+.workSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.workSection .variable-proximity-demo {
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 35px;
+  color: var(--color-text-primary);
+}
+
+.custom-folder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition: transform 0.5s ease, filter 0.5s ease; */
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+}
+
+/* ===============================
+   SERVICES SECTION
+   =============================== */
+.paper-hover-wrapper {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.paper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.4s ease, transform 0.4s ease;
+  border-radius: 10px;
+}
+
+.paper-hover-wrapper:hover .paper-img {
+  filter: brightness(0.4);
+  transform: scale(1.05);
+}
+
+.paper-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  color: var(--color-text-primary);
+  padding: 10px;
+}
+
+.paper-hover-wrapper:hover .paper-overlay {
+  opacity: 1;
+}
+
+.paper-overlay h4 {
+  font-size: 1rem;
+  color: var(--color-brand-primary); /* deep golden */
+  margin-bottom: 5px;
+}
+
+.paper-overlay p {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.visit-btn {
+  background: var(--color-brand-accent);
+  color: var(--color-bg-primary);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.visit-btn:hover {
+  background: var(--color-brand-primary);
+}
+
+.servicesSection {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sectionSubtitle {
+  color: var(--color-brand-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 3rem;
+}
+
+/* ===============================
+   SERVICES CONTAINER
+   =============================== */
+
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  /* margin-bottom: 30px; */
+}
+
+/* ===============================
+   SERVICE CARD
+   =============================== */
+
+.serviceCard {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-card-border);
+  border-radius: 16px;
+  padding: clamp(1rem, 2.8vw, 2.2rem);
+  flex: 1 1 260px;
+  max-width: 420px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: var(--shadow-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.serviceCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+  rgba(0,0,0,0.06) 0%,
+  rgba(0,0,0,0.02) 50%,
+    transparent 100%
+  );
+  transition: all 0.8s ease;
+}
+
+.serviceCard:hover::before {
+  left: 100%;
+}
+
+.serviceCard:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-card-border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.serviceCard h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-brand-primary);
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.serviceCard p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===============================
+   RESPONSIVE STYLES
+   =============================== */
+
+@media (max-width: 1024px) {
+  .projectsmain {
+    padding: 6rem 6%;
+  }
+
+  .servicesContainer {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .servicesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceCard {
+    width: 90%;
+    max-width: 420px;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .projectsmain {
+    padding: 5rem 5%;
+  }
+
+  .workSection .variable-proximity-demo {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .serviceCard {
+    padding: 1.8rem;
+  }
+}
+/* --- Uiverse Hover Card with Description --- */
+.projectsmain .card {
+  width: 80vh;
+  height: 254px;
+  border-radius: 4px;
+  background: var(--color-brand-accent);
+  display: flex;
+  gap: 5px;
+  padding: 0.4em;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.projectsmain .card:hover {
+  width: 80vw;
+}
+
+.projectsmain .card p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+  background: var(--color-brand-accent);
+  border: 1px solid var(--color-brand-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.projectsmain .card p:hover {
+  flex: 4;
+  background: var(--color-brand-secondary);
+}
+
+.projectsmain .card-title {
+  min-width: 14em;
+  padding: 0.5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  color: var(--color-brand-primary);
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+}
+
+.projectsmain .card-description {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.75rem;
+  color: #fff;
+  max-width: 90%;
+  line-height: 1.4;
+  position: absolute;
+  bottom: 1.5em;
+}
+.projectsmain 
+.card p:hover .card-title {
+  transform: rotate(0deg);
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+  color: #fff;
+}
+
+.projectsmain .card p:hover .card-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: Different border colors per column */
+.card p:nth-child(1) {
+  border-color: var(--color-brand-primary);
+}
+.card p:nth-child(2) {
+  border-color: var(--color-brand-primary);
+}
+.card p:nth-child(3) {
+  border-color: var(--color-brand-primary);
+}
